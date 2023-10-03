@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SpaceX_Latest_Launch_Tracker_SpaceX_Latest_Launch_TrackerUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SpaceX_Latest_Launch_Tracker_SpaceX_Latest_Launch_TrackerUITests
+@end

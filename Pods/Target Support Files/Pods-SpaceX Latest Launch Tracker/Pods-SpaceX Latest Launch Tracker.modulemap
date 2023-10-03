@@ -1,0 +1,6 @@
+framework module Pods_SpaceX_Latest_Launch_Tracker {
+  umbrella header "Pods-SpaceX Latest Launch Tracker-umbrella.h"
+
+  export *
+  module * { export * }
+}
