@@ -10,6 +10,8 @@
 		0C14041B54053B899943E5FD /* Pods_SpaceX_Latest_Launch_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9305D431E7AD6F33976F4653 /* Pods_SpaceX_Latest_Launch_TrackerTests.framework */; };
 		0E09CA2FE3A657766024AA57 /* Pods_SpaceX_Latest_Launch_Tracker_SpaceX_Latest_Launch_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C520298AE134AA561E7E4A2 /* Pods_SpaceX_Latest_Launch_Tracker_SpaceX_Latest_Launch_TrackerUITests.framework */; };
 		2E180AE62ACB1A3A0037E4E5 /* Pods_SpaceX_Latest_Launch_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A457F23CD1CA5E55A4FBC8B3 /* Pods_SpaceX_Latest_Launch_Tracker.framework */; };
+		2E3286C42ACF6BAF00233185 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3286C22ACF6B8C00233185 /* Modals.swift */; };
+		2E3286C52ACF6BB000233185 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3286C22ACF6B8C00233185 /* Modals.swift */; };
 		2E767A2A2ACB5FCB00FAF86A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E767A292ACB5FCB00FAF86A /* WidgetKit.framework */; };
 		2E767A2C2ACB5FCB00FAF86A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E767A2B2ACB5FCB00FAF86A /* SwiftUI.framework */; };
 		2E767A2F2ACB5FCB00FAF86A /* Lockscreen_WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E767A2E2ACB5FCB00FAF86A /* Lockscreen_WidgetsBundle.swift */; };
@@ -17,8 +19,6 @@
 		2E767A352ACB5FCB00FAF86A /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E767A342ACB5FCB00FAF86A /* AppIntent.swift */; };
 		2E767A372ACB5FCD00FAF86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E767A362ACB5FCD00FAF86A /* Assets.xcassets */; };
 		2E767A3B2ACB5FCD00FAF86A /* Lockscreen WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2E767A282ACB5FCB00FAF86A /* Lockscreen WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2E989AF72ACF4281000377E4 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E989AF62ACF4280000377E4 /* Modals.swift */; };
-		2E989AF82ACF4281000377E4 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E989AF62ACF4280000377E4 /* Modals.swift */; };
 		2EAEE20B2ACC82980062A85E /* Launcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE98AD2ACC573900D7260C /* Launcher.swift */; };
 		2EAEE20C2ACC83820062A85E /* Lockscreen_Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E767A322ACB5FCB00FAF86A /* Lockscreen_Widgets.swift */; };
 		2EAEE20E2ACC8C690062A85E /* LauncherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5ABDD2ACB0388008DB1E0 /* LauncherServices.swift */; };
@@ -99,6 +99,7 @@
 /* Begin PBXFileReference section */
 		2E3286BC2ACF45BE00233185 /* SpaceX Latest Launch Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SpaceX Latest Launch Tracker.entitlements"; sourceTree = "<group>"; };
 		2E3286BD2ACF45DD00233185 /* Lockscreen WidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lockscreen WidgetsExtension.entitlements"; sourceTree = "<group>"; };
+		2E3286C22ACF6B8C00233185 /* Modals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
 		2E767A282ACB5FCB00FAF86A /* Lockscreen WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lockscreen WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E767A292ACB5FCB00FAF86A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2E767A2B2ACB5FCB00FAF86A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -109,7 +110,6 @@
 		2E767A362ACB5FCD00FAF86A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E767A382ACB5FCD00FAF86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7BAF5B706A3E7251256C0F /* Pods-SpaceX Latest Launch TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX Latest Launch TrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX Latest Launch TrackerTests/Pods-SpaceX Latest Launch TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E989AF62ACF4280000377E4 /* Modals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Modals.swift; path = "../../../SpaceX Latest Launch Tracker/SpaceX Latest Launch Tracker/Modals.swift"; sourceTree = "<group>"; };
 		2EE5ABA82ACAFE7E008DB1E0 /* SpaceX Latest Launch Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceX Latest Launch Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE5ABAB2ACAFE7F008DB1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EE5ABAD2ACAFE7F008DB1E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				2EEE98AD2ACC573900D7260C /* Launcher.swift */,
-				2E989AF62ACF4280000377E4 /* Modals.swift */,
+				2E3286C22ACF6B8C00233185 /* Modals.swift */,
 				2EEE98C42ACC7B3F00D7260C /* Shared.h */,
 				2EEE98C52ACC7B3F00D7260C /* Shared.docc */,
 			);
@@ -609,10 +609,10 @@
 				2EAEE20E2ACC8C690062A85E /* LauncherServices.swift in Sources */,
 				2E767A2F2ACB5FCB00FAF86A /* Lockscreen_WidgetsBundle.swift in Sources */,
 				2EAEE20B2ACC82980062A85E /* Launcher.swift in Sources */,
+				2E3286C52ACF6BB000233185 /* Modals.swift in Sources */,
 				2E767A352ACB5FCB00FAF86A /* AppIntent.swift in Sources */,
 				2E767A312ACB5FCB00FAF86A /* Lockscreen_WidgetsLiveActivity.swift in Sources */,
 				2EAEE20C2ACC83820062A85E /* Lockscreen_Widgets.swift in Sources */,
-				2E989AF82ACF4281000377E4 /* Modals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,10 +623,10 @@
 				2EE5ABB02ACAFE7F008DB1E0 /* LauncherVC.swift in Sources */,
 				2EE5ABAC2ACAFE7F008DB1E0 /* AppDelegate.swift in Sources */,
 				2EE5ABDC2ACAFFE3008DB1E0 /* LauncherCVC.swift in Sources */,
+				2E3286C42ACF6BAF00233185 /* Modals.swift in Sources */,
 				2EE5ABAE2ACAFE7F008DB1E0 /* SceneDelegate.swift in Sources */,
 				2EEE98AE2ACC573900D7260C /* Launcher.swift in Sources */,
 				2EE5ABDE2ACB0388008DB1E0 /* LauncherServices.swift in Sources */,
-				2E989AF72ACF4281000377E4 /* Modals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
