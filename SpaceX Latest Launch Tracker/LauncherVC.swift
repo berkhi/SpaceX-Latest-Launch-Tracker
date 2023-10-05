@@ -13,7 +13,7 @@ class LauncherVC: UIViewController {
     
     @IBOutlet weak var LauncherCollectionView: UICollectionView!
     
-    var launchers: [LauncherResponse] = []
+    var launchers: [Modals.LauncherResponse] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

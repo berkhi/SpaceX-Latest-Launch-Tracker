@@ -36,11 +36,11 @@ struct Provider: AppIntentTimelineProvider {
             print("currentDate: \(currentDate)")
             print("name: \(String(describing: name))")
             
-            if let lastTaskDate = Date(fromUTCString: dateUtc!) {
+            if let lastTaskDate = Date(fromUTCString: dateUtc) {
                 let timeDifference = Calendar.current.dateComponents([.hour, .minute], from: currentDate, to: lastTaskDate)
                 let remainingTime = "\(timeDifference.hour ?? 0)h \(timeDifference.minute ?? 0)m"
                 
-                let entry = SimpleEntry(date: currentDate, configuration: configuration, remainingTime: remainingTime, name: name!)
+                let entry = SimpleEntry(date: currentDate, configuration: configuration, remainingTime: remainingTime, name: name)
                 entries.append(entry)
             } else {
                 print("Failed to convert date_utc string to Date")
